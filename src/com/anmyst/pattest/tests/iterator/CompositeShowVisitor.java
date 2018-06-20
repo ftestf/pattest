@@ -9,7 +9,6 @@ public class CompositeShowVisitor implements CompositeVisitorIFace {
 			System.out.print("-");
 		if (!component.isComposite()) {
 			System.out.println(component.getName());
-			return;
 		} else {
 			System.out.println("Folder: " + component.getName());
 			for (CompositeIFace comp : component.getComponents())

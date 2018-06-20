@@ -17,11 +17,13 @@ public class PrototypeTest implements RunTest {
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
-		
-		messagesClone.addMessage("message 4");
-		System.out.println(messages.toString());
-		System.out.println(messagesClone.toString());
-		
+
+		if (messagesClone != null) {
+			messagesClone.addMessage("message 4");
+			System.out.println(messages.toString());
+			System.out.println(messagesClone.toString());
+		}
+
 	}
 
 }

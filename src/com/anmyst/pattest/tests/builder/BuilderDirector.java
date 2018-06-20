@@ -8,7 +8,7 @@ public class BuilderDirector {
 	}
 	public void constructMass(BuilderMailIFace mail, String from, List<String> to, String text ) {
 		mail.addFrom(from).addText(text);
-		to.stream().forEach(toAddress -> mail.addTo(toAddress));
+		to.forEach(mail::addTo);
 	}
 
 }

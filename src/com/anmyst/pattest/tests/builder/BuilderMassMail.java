@@ -18,7 +18,7 @@ public class BuilderMassMail extends BuilderMail {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(from).append("\n");
-		toAddresses.stream().forEach(to -> sb.append(to).append(";"));
+		toAddresses.forEach(to -> sb.append(to).append(";"));
 		sb.append("\n").append(text).append("\n");
 		return sb.toString();
 	}

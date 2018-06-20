@@ -7,8 +7,7 @@ public class StrategySorter {
 	private int[] array;
 
 	public void printArray() {
-		for (int i = 0; i < array.length; i++)
-			System.out.print(array[i] + ";");
+		for (int item : array) System.out.print(item + ";");
 		System.out.println();
 	}
 

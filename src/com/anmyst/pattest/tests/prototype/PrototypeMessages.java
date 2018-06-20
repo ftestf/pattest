@@ -13,14 +13,14 @@ public class PrototypeMessages implements Cloneable {
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		PrototypeMessages clone = (PrototypeMessages) super.clone();
-		clone.setMessages(new ArrayList<String>(messages));
+		clone.setMessages(new ArrayList<>(messages));
 		return clone;
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		messages.stream().forEach(m -> sb.append(m).append("\n"));
+		messages.forEach(m -> sb.append(m).append("\n"));
 		return sb.toString();
 	}
 
