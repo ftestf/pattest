@@ -2,7 +2,7 @@ package com.anmyst.pattest.tests.composite;
 
 import com.anmyst.pattest.tests.RunTest;
 
-public class CompositeTest implements RunTest {	
+public class CompositeTest implements RunTest {
 
 	@Override
 	public void startTest() {
