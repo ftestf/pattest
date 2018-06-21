@@ -12,9 +12,9 @@ public class SingletonTest implements RunTest {
 		SingletonClass firstSingleton = SingletonClass.getInstance();
 		firstSingleton.setMessage("Test Message");
 		try {
-			Constructor<SingletonClass> constructor = SingletonClass.class.getDeclaredConstructor(new Class[0]);
+			Constructor<SingletonClass> constructor = SingletonClass.class.getDeclaredConstructor();
 			constructor.setAccessible(true);
-			SingletonClass secondSingleton = constructor.newInstance(new Object[0]);
+			SingletonClass secondSingleton = constructor.newInstance();
 			secondSingleton.setMessage("Test Message 2");
 			System.out.println(firstSingleton.getMessage());
 			System.out.println(secondSingleton.getMessage());
