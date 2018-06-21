@@ -3,7 +3,7 @@ package com.anmyst.pattest.tests.iterator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import com.anmyst.pattest.tests.composite.CompositeIFace;;
+import com.anmyst.pattest.tests.composite.CompositeIFace;
 
 public class CompositeIterator implements Iterator<CompositeIFace> {
 	private int index = -1;
@@ -15,9 +15,7 @@ public class CompositeIterator implements Iterator<CompositeIFace> {
 
 	@Override
 	public boolean hasNext() {
-		if (index >= composite.getComponents().size() - 1)
-			return false;
-		return true;
+		return index < composite.getComponents().size() - 1;
 	}
 
 	@Override

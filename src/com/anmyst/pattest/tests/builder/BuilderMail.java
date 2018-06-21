@@ -26,9 +26,7 @@ public class BuilderMail implements BuilderMailIFace {
 
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		sb.append(from).append("\n").append(to).append("\n").append(text).append("\n");
-		return sb.toString();
+		return from + "\n" + to + "\n" + text + "\n";
 	}
 
 }

@@ -4,7 +4,7 @@ public enum State {
 	NORMAL(new StateNormal()), LOW(new StateLow()), UP(new StateUp());
 	private StateIFace state;
 
-	private State(StateIFace state) {
+	State(StateIFace state) {
 		this.state = state;
 	}
 
