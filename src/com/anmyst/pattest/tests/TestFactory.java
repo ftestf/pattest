@@ -9,6 +9,7 @@ import com.anmyst.pattest.tests.command.CommandTest;
 import com.anmyst.pattest.tests.composite.CompositeTest;
 import com.anmyst.pattest.tests.decorator.DecoratorTest;
 import com.anmyst.pattest.tests.iterator.IteratorTest;
+import com.anmyst.pattest.tests.mediator.MediatorTest;
 import com.anmyst.pattest.tests.memento.MementoTest;
 import com.anmyst.pattest.tests.observer.ObserverTest;
 import com.anmyst.pattest.tests.prototype.PrototypeTest;
@@ -41,6 +42,8 @@ public class TestFactory {
 			return new DecoratorTest();
 		case ITERATOR_VISITOR:
 			return new IteratorTest();
+		case MEDIATOR:
+			return new MediatorTest();
 		case MEMENTO:
 			return new MementoTest();
 		case OBSERVER:
